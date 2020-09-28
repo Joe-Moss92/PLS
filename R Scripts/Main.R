@@ -10,7 +10,7 @@
 
 ##  Load model inputs =======================================================================================================================
 
-source("R Scripts/Libraries.R")
+source("R Scripts/Libraries.R") # You may need to remove the comments in the Libraries.R script in order to install the required packages
 source("R Scripts/Model_Inputs.R")
 
 

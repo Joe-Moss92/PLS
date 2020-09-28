@@ -12,7 +12,7 @@
 
 Packages <- c("tidyverse", "survival", "survminer", "doSNOW", "foreach", "knitr", "scales", "devtools", "reshape2", "plotly")
 
-lapply(Packages, install.packages, character.only = TRUE)
-devtools::install_github("DARTH-git/dampack")
+#lapply(Packages, install.packages, character.only = TRUE)
+#devtools::install_github("DARTH-git/dampack")
 
 lapply(c(Packages, "dampack"), library, character.only = TRUE)
