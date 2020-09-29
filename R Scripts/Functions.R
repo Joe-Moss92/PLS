@@ -417,6 +417,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_X <- foreach(
       i = 1:Input_MS_Patient_Number,
+      .packages = c("tidyverse"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
