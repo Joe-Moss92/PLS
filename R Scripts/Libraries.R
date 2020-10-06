@@ -10,9 +10,9 @@
 
 # List of required packages ==========================================================================================================
 
-Packages <- c("tidyverse", "survival", "survminer", "doSNOW", "foreach", "knitr", "scales", "devtools", "reshape2", "plotly")
+Packages <- c("doSNOW", "foreach", "knitr", "scales", "devtools", "reshape2", "plotly", "tidyverse")
 
-#lapply(Packages, install.packages, character.only = TRUE)
+#lapply(Packages, install.packages, character.only = TRUE, dependicies = TRUE)
 #devtools::install_github("DARTH-git/dampack")
 
-lapply(c(Packages, "dampack"), library, character.only = TRUE)
+lapply(c(Packages,"dampack"), library, character.only = TRUE)

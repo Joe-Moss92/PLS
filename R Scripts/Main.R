@@ -30,6 +30,8 @@ Out_Patient_Char <- func_Patient_Char_List(Input_MS_Patient_Number, age = Input_
 
 Out_Sim_Results <- func_Simulation()
 
+#View(as.data.frame(Out_Sim_Results[["Drug_X"]][[1]]))
+
 # Condense summary results
 
 Out_Sim_Summary <- func_Condense_Results()
@@ -53,5 +55,5 @@ func_Plot_CEAC(treat.names = c("Drug_X", "Drug_A", "Drug_B", "Drug_C", "Drug_D")
 
 ## Check model stability ===================================================================================================================
 
-func_Model_Stability("Cost", y.limits = c(0, 200000), y.breaks = seq(0, 200000, 20000), interactive = FALSE)
-func_Model_Stability("HRQoL", y.limits = c(5, 15), y.breaks = seq(5, 15, 1), interactive = FALSE)
+func_Model_Stability("Cost", y.limits = c(0, 200000), y.breaks = seq(0, 200000, 20000), interactive = TRUE)
+func_Model_Stability("HRQoL", y.limits = c(5, 15), y.breaks = seq(5, 15, 1), interactive = TRUE)

@@ -417,7 +417,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_X <- foreach(
       i = 1:Input_MS_Patient_Number,
-      .packages = c("tidyverse"),
+      .packages = c("purrr"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
@@ -453,6 +453,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_A <- foreach(
       i = 1:Input_MS_Patient_Number,
+      .packages = c("purrr"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
@@ -488,6 +489,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_B <- foreach(
       i = 1:Input_MS_Patient_Number,
+      .packages = c("purrr"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
@@ -523,6 +525,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_C <- foreach(
       i = 1:Input_MS_Patient_Number,
+      .packages = c("purrr"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
@@ -558,6 +561,7 @@ func_Simulation <- function(use.seed = FALSE,
     
     Temp_List_Drug_D <- foreach(
       i = 1:Input_MS_Patient_Number,
+      .packages = c("purrr"),
       .export = c(ls(.GlobalEnv)),
       .inorder = FALSE
     ) %dopar% {
@@ -663,6 +667,7 @@ func_Simulation <- function(use.seed = FALSE,
       
       Temp_List_Drug_X <- foreach(
         i = 1:Input_MS_Patient_Number,
+        .packages = c("purrr"),
         .export = c(ls(.GlobalEnv)),
         .inorder = FALSE
       ) %dopar% {
@@ -698,6 +703,7 @@ func_Simulation <- function(use.seed = FALSE,
       
       Temp_List_Drug_A <- foreach(
         i = 1:Input_MS_Patient_Number,
+        .packages = c("purrr"),
         .export = c(ls(.GlobalEnv)),
         .inorder = FALSE
       ) %dopar% {
@@ -733,6 +739,7 @@ func_Simulation <- function(use.seed = FALSE,
       
       Temp_List_Drug_B <- foreach(
         i = 1:Input_MS_Patient_Number,
+        .packages = c("purrr"),
         .export = c(ls(.GlobalEnv)),
         .inorder = FALSE
       ) %dopar% {
@@ -768,6 +775,7 @@ func_Simulation <- function(use.seed = FALSE,
       
       Temp_List_Drug_C <- foreach(
         i = 1:Input_MS_Patient_Number,
+        .packages = c("purrr"),
         .export = c(ls(.GlobalEnv)),
         .inorder = FALSE
       ) %dopar% {
@@ -803,6 +811,7 @@ func_Simulation <- function(use.seed = FALSE,
       
       Temp_List_Drug_D <- foreach(
         i = 1:Input_MS_Patient_Number,
+        .packages = c("purrr"),
         .export = c(ls(.GlobalEnv)),
         .inorder = FALSE
       ) %dopar% {
