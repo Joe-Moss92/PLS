@@ -199,7 +199,7 @@ func_HRQoL <- function(hrqol.info, gfr, sex){
   # Check for 0 gfr as it cannot be logged
   
   if(gfr == 0){
-    Temp_HRQoL <- -0.5
+    Temp_HRQoL <- 0
   }
   
   # HRQoL ~ 0.178646993 * log(GFR) + -0.038606670 * Sex(M) + 0.005240453
